@@ -10,5 +10,9 @@ function chachachia(forestSize){
     }
     let forest = new Tree(0);
 
-    for
+    for(let i=0;i<forestSize;i++){
+        forest.add(plantingSeeds.dequeue())
+    }
+    return forest;
 }
+module.exports = chachachia;
