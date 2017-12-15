@@ -1,18 +1,17 @@
-const require = ('./tree.js');
-const require = ('./queue.js');
-const require = ('./random.js');
+const Tree = require('./Tree.js');
+const Queue = require('./Queue.js');
+const Random = require('./Random.js');
 
-function chachachia(forestSize){
-    let forestSize = ;
-    let newQueue = ;
-    for(i=0;i<forestsize.length;i++){
-        plantSeeds.enqueue(random.discreteRangeIn(1,1000000))
-    }
-    let forest = new Tree(0);
-
-    for(let i=0;i<forestSize;i++){
-        forest.add(plantingSeeds.dequeue())
-    }
-    return forest;
+const miracleGrow = function(size){
+  let forestSize = size;
+  let plantingSeeds = new Queue();
+  for (let x=0; x<forestSize;x++){
+    plantingSeeds.enqueue(Random().discreteRangeIn(1,1000));
+  }
+  let forest = new Tree(0);
+  for (let x=0; x<plantingSeeds.length;x++){
+    forest.add(plantingSeeds.dequeue());
+  }
+  return forest;
 }
-module.exports = chachachia;
+module.exports = MiracleGrow;
